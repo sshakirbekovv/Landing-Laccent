@@ -1,0 +1,547 @@
+.elipse1 {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+
+    img {
+        position: relative;
+        margin-left: -.7rem;
+    }
+}
+
+.elipse2 {
+    position: absolute;
+    bottom: -100px;
+    right: 17rem;
+
+    img {
+        position: relative;
+    }
+}
+
+.elipse3 {
+    position: absolute;
+    right: 0;
+    top: 125px;
+
+    img {
+        position: relative;
+    }
+}
+
+.elipse4 {
+    position: absolute;
+    margin: 9rem 0 0 -6rem;
+
+    img {
+        position: relative;
+    }
+}
+
+.elipse5 {
+    position: absolute;
+    right: 15%;
+
+    img {
+        position: relative;
+    }
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    padding-top: 4rem;
+
+    img {
+        position: relative;
+        margin-left: -1.2rem;
+    }    
+}
+
+.download {
+    padding: 140px 90px 180px 90px;
+    position: relative;
+
+    .image__mobile {
+        display: none;
+    }
+
+    .content {
+        z-index: 3;
+        position: relative;
+
+       h1 {
+        letter-spacing: 0.01em;
+        color: #2B3B54;
+        font-weight: bold;
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+        font-family: 'Inter-Bold';
+       }
+
+       p {
+        font-size: 1.5rem;
+        letter-spacing: 0.02em;
+        color: rgba(51, 51, 51, 0.65);
+        line-height: 2.5rem;
+        padding: 1.875rem 0 2.8rem 0;
+        width: 90%;
+       }
+    }
+
+    .image {
+        z-index: 3;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .background {
+        width: 680px;
+        height: 634px;
+        background: url('../../../assets/images/back_phones.png') no-repeat right top / 90%;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        right: 180px;
+    }
+}
+
+.works {
+    padding: 20px 90px 90px 90px;
+    
+    .title {
+        
+        h1 {
+            padding: 3rem 0;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #2B3B54;
+            font-size: 3rem;
+            font-family: 'Inter-Bold';
+            font-weight: bold;
+        }
+    }
+
+    .image {
+        padding: 0 0 0 4rem;
+    }
+
+    .content {
+        position: relative;
+
+       h1 {
+        letter-spacing: 0.01em;
+        color: #2B3B54;
+        font-weight: bold;
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+        font-weight: bold;
+        font-family: 'Inter-Bold';
+       }
+
+       p {
+        font-size: 1.5rem;
+        letter-spacing: 0.02em;
+        color: rgba(51, 51, 51, 0.65);
+        line-height: 2.5rem;
+        padding: 1.875rem 0 2.8rem 0;
+        font-weight: 500;
+        font-family: 'Inter-Medium';
+       }
+    }
+}
+
+.partner {
+    padding: 60px 90px;
+    position: relative;
+
+    .title {
+        
+       h1 {
+        padding: 2rem 0;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #2B3B54;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Inter-Bold';
+       }
+
+        p {
+         letter-spacing: 0.2px;
+         color: #868686;
+         font-size: 1.125rem;
+         text-align: center; 
+        }
+    }
+
+    form {
+        width: 70%;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 6px;
+            padding: 0.8rem 1rem;
+            transition: all 0.3s;
+            color: #717FE0;
+            outline: none;
+            font-size: 1rem;
+            order: 1;
+            
+            &:focus {
+                border: 1px solid #717FE0;
+                background: rgba(220, 222, 254, 0.35);
+                -webkit-border: 1px solid #717FE0;
+                -webkit-background: rgba(220, 222, 254, 0.35);
+            }
+
+            &:focus + label {
+                color: #717FE0;
+            }
+
+            &:hover {
+                border: 1px solid #717FE0;
+            }
+        }
+
+        label {
+            font-size: 1rem;
+            color: #333333;
+            padding: 1.7rem 0 .7rem 0;
+            transition: all 0.3s;
+            order: 0;
+        }
+
+        .star {
+            color: #717FE0;
+        }
+
+        button {
+            margin: 3.75rem 0;
+            border-radius: 8px;
+            width: 100%;
+            text-transform: none;
+            color: #FFFFFF;
+            padding: 1.2rem 0;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .button:disabled, .button[disabled] {
+            opacity: .5;
+            color: #FFFFFF;
+            cursor: not-allowed;
+            pointer-events: painted;
+        }
+
+        .error {
+            color: rgba(235,87,87,var(--text-opacity));
+            order: 2;
+            padding: .7rem 0 0 0;
+            font-size: 1rem;
+            --text-opacity: 1;
+        }
+
+        .success {
+            color: rgba(18,150,40,var(--text-opacity));
+            text-align: center;
+            padding-top: 1rem;
+            font-size: 1rem;
+            --text-opacity: 1;
+        }
+    }
+
+}
+
+.quote {
+    padding: 70px 90px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+    margin: 0 5.6rem 0 5.6rem;
+    position: relative;
+
+    .quote_item {
+        display: flex;
+        align-items: baseline;
+        letter-spacing: 0.01em;
+        color: #333333;
+        font-size: 1.5rem;
+        margin-bottom: 2.3rem;
+
+        p {
+            max-width: 600px;
+            line-height: 40px;
+        }
+
+        .quote_pic {
+            width: 50px;
+        }
+    }
+
+    .quote_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1.5rem;
+
+        .name {
+            letter-spacing: 0.01em;
+            color: #000000;
+            font-size: 1.5rem;
+            line-height: 29px;
+        }
+
+        .about {
+            letter-spacing: 0.01em;
+            color: #999999;
+            font-size: 1.125rem;
+            max-width: 260px;
+            padding-top: .4rem;
+            line-height: 22px;
+            font-weight: normal;
+        }
+    }
+
+    .avatar {
+        margin-left: 3.2rem;
+    }
+
+    .heart {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 0 -1rem 1.3rem 0;
+    }
+}
+
+// Ipad 
+@media only screen and (max-width: 1024px) { 
+
+    section {
+        padding: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .elipse1 {
+
+        img {
+            max-width: 90% !important;
+        }
+    }
+
+    .content {
+        text-align: center !important;
+    }
+
+    section {
+        padding: 2.5rem 0 0 0 !important;
+    }
+
+    .partner { 
+
+
+        form {
+            width: 100%;
+
+            .error { 
+                padding: .5rem 0 0 0;
+                font-size: .8rem;
+            }
+
+            .success {
+                font-size: .8rem;
+                padding-top: .7rem;
+            }
+
+            .first_label {
+                padding: 1.6rem 0 .5rem 0;
+            }
+
+            label {
+                padding: 1.2rem 0 .5rem 0;
+            }
+        }
+
+        .title {
+
+            h1 {
+                padding: 2.5rem 0 10px 0;
+            }
+        }
+    }
+    .line {
+
+        img {
+            top: -6vh;
+        }    
+    }
+
+    .download { 
+        padding: 1rem 0 0 0 !important;
+
+        .content {
+
+            p {
+                width: 100%;
+            }
+        }
+        
+        .image__mobile {
+            display: block;
+            position: relative;
+            padding-bottom: 2rem;
+
+            img {
+                max-width: 100% !important;
+            }
+
+            .image__mobile_wrapper {
+                z-index: 3;
+                position: relative;
+            }
+
+            .background {
+                display: none;
+                position: absolute;
+                width: 257px;
+                height: 230px;
+                right: 6.2rem;
+            }
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            display: none;
+        }
+
+        .background {
+            display: none;
+        }
+    }
+
+    .works {
+
+        .content { 
+
+            p {
+                padding: .75rem 0 2.3rem 0;
+            }
+        }
+
+        .title {
+        
+            h1 {
+                padding: 0 0 1.2rem 0;
+            }
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile_pos_zero {
+            order: 0;
+        }
+
+        .mobile_pos_one {
+            order: 1;
+        }
+
+        .image {
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .content {
+
+        h1 {
+            font-size: 17px !important;
+        }
+    }
+
+    h1 {
+        font-size: 20px !important;
+        line-height: 1.2 !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+    label {
+        font-size: 14px !important;
+    }
+
+    img {
+        max-width: 60% !important;
+    }
+
+    .partner { 
+        
+        form {
+
+            button {
+                padding: .6rem;
+                font-size: 1rem;
+                margin: 2.2rem 0 6rem 0;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .download { 
+
+        .content {
+
+            p {
+                padding: 1.2rem 0 1.5rem 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .line {
+
+        img {
+            margin-left: -4.2rem;
+            max-width: 70% !important;
+        }    
+    }
+}
+
+@media only screen and (max-width: 320px) { 
+
+    .download { 
+
+        .image__mobile {
+
+            .background {
+                width: 235px;
+                height: 208px;
+                right: 4rem;
+            }
+        }
+    }
+}

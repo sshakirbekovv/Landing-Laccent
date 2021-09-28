@@ -1,0 +1,194 @@
+header {
+  background: transparent;
+  padding: 20px 65px 100px 65px;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav__menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+
+  li {
+
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav__links {
+  letter-spacing: 0.01em;
+  color: #333333;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #717FE0;
+  }
+}
+
+.nav__links-mobile {
+  display: none;
+}
+
+.menu__icon_new {
+  display: none;
+}
+
+.active {
+  color: #717FE0;
+}
+
+//Fixed Header on Scroll
+.fixedHeader {
+  background: rgba(255, 255, 255, 0.79);
+  backdrop-filter: blur(38px);
+  top: 0;
+  padding: 0 90px 0 90px;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .fixedHeader { 
+    width: auto;
+    position: fixed;
+    height: 3rem;
+    padding: .5rem 0;
+  }
+
+  header { 
+    position: relative;
+    padding: 2rem 0 1.2rem 0;
+    
+  }
+
+  .nav__item { 
+    height: auto;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -120%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    li {
+
+      &:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.4rem 1.5rem 2rem 0;
+        
+        img {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .nav__menu.active {
+    background: #FFFFFF;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    top: 0;
+    border-radius: 4px;
+    z-index: 999;
+  }
+
+  .nav__links {
+    text-align: center;
+    width: 100%;
+    color: #2B3B54;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    font-family: 'Inter-SemiBold';
+  }
+
+  .nav__links:hover {
+    border-radius: 0;
+  }
+
+  .navbar__logo {
+    position: relative;
+
+    img {
+      object-fit: contain;
+      max-width: 72% !important;
+    }
+  }
+
+  .menu__icon_new {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    display: block;
+
+    img {
+      max-width: 100% !important;
+    }
+  }
+
+  .nav__links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .nav__links-mobile:hover {
+    transition: 250ms;
+  }
+
+  .buttonPrimary {
+    display: none;
+  }
+}
+
